@@ -1,0 +1,41 @@
+variable "vpc_name" {
+  description = "Vpc name."  
+  type = string
+  default = "VPC-20921"
+}
+
+variable "vpc_cidr_block" {
+  description = "VPC CIDR block"
+  type = string
+  default = "10.0.0.0/16"
+}
+
+variable "vpc_id" {
+  description = "VPC id of the subnet"
+  default = "0"
+  type = string
+}
+
+variable "pub_cidr_block" {
+  description = "Public subnet cidr"
+  default = "10.0.1.0/24"
+  type = string
+}
+
+variable "availability_zone" {
+  description = "Availability Zone"
+  default = "us-east-1a"
+}
+
+variable "pvt_cidr_block1" {
+  description = "CIDR block for first private subnet"
+  default = "10.0.2.0/24"
+  type = string
+}
+
+variable "pvt_cidr_block2" {
+  description = "CIDR block for second private subnet"
+  default = "10.0.3.0/24"
+  type = string
+}
+
